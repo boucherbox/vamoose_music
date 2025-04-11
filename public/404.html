@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+    <meta charset="utf-8">
     <title>VaMoose</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+      // SPA redirect script for GitHub Pages
+      // Store the URL the user was trying to access
+      var pathSegments = window.location.pathname.split('/');
+      var redirectPath = pathSegments.slice(1).join('/');
+      
+      // Single Page Apps for GitHub Pages
+      // Redirect with replacing URL so the back button works properly
+      var redirectUrl = window.location.origin + '/' + redirectPath;
+      
+      // Check for query params and hash and add them to the redirect URL
+      var queryParams = window.location.search || '';
+      var hashFragment = window.location.hash || '';
+      redirectUrl = redirectUrl + queryParams + hashFragment;
+      
+      // Redirect to the correct URL
+      window.location.replace(redirectUrl);
+    </script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- If JavaScript is disabled, provide a link to the home page -->
+    <noscript>
+      <h1>VaMoose</h1>
+      <p>JavaScript is required to view this site.</p>
+      <p><a href="/">Click here to go to the home page</a></p>
+    </noscript>
   </body>
 </html>
