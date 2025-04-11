@@ -1,0 +1,18 @@
+{
+    "root": "./dist",
+    "clean_urls": true,
+    "https_only": true,
+    "headers": {
+      "/**": {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Security-Policy": "default-src 'self' data: 'unsafe-inline' 'unsafe-eval'",
+        "X-Content-Type-Options": "nosniff"
+      },
+      "/assets/*.js": {
+        "Content-Type": "application/javascript"
+      }
+    },
+    "routes": {
+      "/**": "index.html"
+    }
+  }
