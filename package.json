@@ -1,7 +1,8 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "vamoose_music",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://vamoose.music",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -29,10 +30,5 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.2"
-  }
-  {
-    "name": "vamoose_music",
-    "version": "1.0.0",
-    "homepage": "https://vamoose.music"
   }
 }
