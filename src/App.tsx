@@ -46,15 +46,15 @@ function App() {
                 key={item}
                 onClick={() => setActiveModal(item.toLowerCase())}
                 className={`
-                  px-4 py-2 border border-[#F5F5F5] hover:border-[#8A4FFF] 
-                  transition-all duration-300 text-sm md:text-base tracking-wider
+                  px-8 py-3 border border-[#F5F5F5] hover:border-[#8A4FFF] 
+                  transition-all duration-300 text-lg tracking-wider
                   md:border-r md:border-l
                   md:first:rounded-l-md md:first:border-l
                   md:last:rounded-r-md md:last:border-r
                   ${index === 0 ? 'rounded-t-md md:rounded-t-none' : ''}
                   ${index === navItems.length - 1 ? 'rounded-b-md' : ''}
                   ${index !== 0 && index !== navItems.length - 1 ? 'border-t-0 md:border-t' : ''}
-                  hover:bg-[#8A4FFF]/10 active:bg-[#8A4FFF]/20
+                  hover:bg-[#8A4FFF]/10
                 `}
               >
                 {item}
