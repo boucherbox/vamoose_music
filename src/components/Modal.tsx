@@ -64,8 +64,8 @@ export const Modal: React.FC<ModalProps> = ({ children, onClose, title }) => {
         </div>
         
         <div className="p-6">
-          <h2 className="text-7xl font-quicksand-light mb-2 uppercase">{title}</h2>
-          <div className="w-1/3 h-[1px] bg-gradient-to-r from-[#8A4FFF] to-transparent mb-6"></div>
+          <h2 className="text-3xl md:text-4xl font-quicksand-light mb-2 uppercase">{title}</h2>
+          <div className="w-1/3 h-[1px] bg-gradient-to-r from-[#F5F5F5] to-transparent mb-6"></div>
           {children}
         </div>
       </div>

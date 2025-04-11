@@ -40,21 +40,21 @@ function App() {
           </h1>
 
           {/* Navigation Buttons */}
-          <div className="flex flex-wrap justify-center">
+          <div className="flex flex-col md:flex-row gap-2 md:gap-0">
             {navItems.map((item, index) => (
               <button
                 key={item}
                 onClick={() => setActiveModal(item.toLowerCase())}
                 className={`
                   px-8 py-3 border border-[#F5F5F5] hover:border-[#8A4FFF] 
-                  transition-colors duration-300 text-lg tracking-wider
-                  ${index === 0 ? 'rounded-l-md' : ''}
-                  ${index === navItems.length - 1 ? 'rounded-r-md' : ''}
-                  ${index !== 0 && index !== navItems.length - 1 ? 'border-l-0' : ''}
-                  ${index !== navItems.length - 1 ? 'border-r-0' : ''}
+                  transition-all duration-300 text-lg tracking-wider
                   md:border-r md:border-l
-                  md:first:border-l-0
-                  md:last:border-r-0
+                  md:first:rounded-l-md md:first:border-l
+                  md:last:rounded-r-md md:last:border-r
+                  ${index === 0 ? 'rounded-t-md md:rounded-t-none' : ''}
+                  ${index === navItems.length - 1 ? 'rounded-b-md' : ''}
+                  ${index !== 0 && index !== navItems.length - 1 ? 'border-t-0 md:border-t' : ''}
+                  hover:bg-[#8A4FFF]/10
                 `}
               >
                 {item}
