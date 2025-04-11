@@ -46,15 +46,15 @@ function App() {
                 key={item}
                 onClick={() => setActiveModal(item.toLowerCase())}
                 className={`
-                  px-8 py-3 border border-[#F5F5F5] hover:border-[#8A4FFF] 
-                  transition-all duration-300 text-lg tracking-wider
+                  px-4 py-2 border border-[#F5F5F5] hover:border-[#8A4FFF] 
+                  transition-all duration-300 text-sm md:text-base tracking-wider
                   md:border-r md:border-l
                   md:first:rounded-l-md md:first:border-l
                   md:last:rounded-r-md md:last:border-r
                   ${index === 0 ? 'rounded-t-md md:rounded-t-none' : ''}
                   ${index === navItems.length - 1 ? 'rounded-b-md' : ''}
                   ${index !== 0 && index !== navItems.length - 1 ? 'border-t-0 md:border-t' : ''}
-                  hover:bg-[#8A4FFF]/10
+                  hover:bg-[#8A4FFF]/10 active:bg-[#8A4FFF]/20
                 `}
               >
                 {item}
@@ -67,7 +67,7 @@ function App() {
         <footer className="absolute bottom-8 left-0 right-0">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-center">
-              <a href="#" className="hover:text-[#8A4FFF] transition-colors">
+              <a href="https://www.instagram.com/vamoose_music/" target="_blank" rel="noopener noreferrer" className="hover:text-[#8A4FFF] transition-colors">
                 <Instagram size={24} />
               </a>
             </div>
