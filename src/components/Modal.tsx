@@ -38,9 +38,9 @@ export const Modal: React.FC<ModalProps> = ({ children, onClose, title }) => {
   };
 
   return (
-    <div className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       <div 
-        className="absolute inset-0 bg-black/50 backdrop-blur-md transition-all duration-500 ease-out"
+        className={`absolute inset-0 bg-black/50 backdrop-blur-md transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${isVisible ? 'opacity-100' : 'opacity-0'}`}
         onClick={handleClose}
       ></div>
       
@@ -51,7 +51,7 @@ export const Modal: React.FC<ModalProps> = ({ children, onClose, title }) => {
           [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent 
           [&::-webkit-scrollbar-thumb]:bg-[#8A4FFF] [&::-webkit-scrollbar-thumb]:rounded-full 
           [&::-webkit-scrollbar-thumb]:hover:bg-[#7A3FEF]
-          ${isVisible ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}
+          ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}
         `}
       >
         <div className="absolute top-4 right-4 z-10">

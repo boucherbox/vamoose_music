@@ -21,10 +21,10 @@ function App() {
   const navItems = ['ABOUT', 'MEDIA', 'SHOWS', 'CONTACT'];
 
   return (
-    <div className={`min-h-screen bg-[#2D2D2D] text-[#F5F5F5] transition-all duration-500 ease-out ${activeModal ? 'scale-105' : ''}`}>
+    <div className={`min-h-screen bg-[#2D2D2D] text-[#F5F5F5] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${activeModal ? 'scale-105' : 'scale-100'}`}>
       {/* Hero Section */}
       <div 
-        className={`h-screen relative flex items-center justify-center bg-cover bg-center transition-all duration-500 ease-out ${activeModal ? 'blur-md' : ''}`}
+        className={`h-screen relative flex items-center justify-center bg-cover bg-center transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${activeModal ? 'blur-md' : 'blur-none'}`}
         style={{
           backgroundImage: 'url("/images/halfandhalfhero.jpg")',
           backgroundBlendMode: 'overlay',
