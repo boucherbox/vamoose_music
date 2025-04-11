@@ -22,8 +22,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Add CNAME file
-        run: echo "vamoose.music" > ./dist/CNAME
+      - name: Create proper headers
+        run: |
+          cp public/_headers dist/
+          # Ensure the CNAME file exists
+          echo "vamoose.music" > ./dist/CNAME
+          # Create .nojekyll file to disable Jekyll processing
+          touch ./dist/.nojekyll
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4

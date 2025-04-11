@@ -1,6 +1,15 @@
 /*
   Content-Type: text/html; charset=utf-8
+  Access-Control-Allow-Origin: *
+  
 /*.js
   Content-Type: application/javascript
+  
+/*.mjs
+  Content-Type: application/javascript
+  
 /*.css
   Content-Type: text/css
+  
+/*.svg
+  Content-Type: image/svg+xml

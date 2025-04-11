@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/', // Changed from './' to '/'
   build: {
     assetsDir: 'assets',
     sourcemap: false
