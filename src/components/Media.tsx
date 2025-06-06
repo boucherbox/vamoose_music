@@ -12,27 +12,15 @@ export const Media: React.FC = () => {
     '/images/posters/the_tetonia_club.jpg',
     '/images/posters/the_virginian.png',
     '/images/posters/guidepost.jpg',
-    '/images/posters/midnight_lunch.png'
+    '/images/posters/midnight_lunch.png',
+    '/images/posters/v3.png'
   ];
 
   return (
     <section id="media" className="py-20">
       <div className="max-w-6xl mx-auto">
-        
-
-        {/* Music Players */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-quicksand-light mb-6">Latest Release</h3>
-          <div className="bg-[#1D1D1D] p-6 rounded-lg">
-            <div className="aspect-video w-full bg-[#2D2D2D] rounded flex items-center justify-center">
-              <p className="text-lg opacity-50">Music Player Embed</p>
-            </div>
-          </div>
-        </div>
-
         {/* Photo Gallery */}
         <div className="mb-16">
-          <h3 className="text-2xl font-quicksand-light mb-6">Gallery</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {photos.map((photo, index) => (
               <div key={index} className="relative overflow-hidden rounded-lg group">
